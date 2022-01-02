@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light List - Luan Thierry</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Light List <i class="fas fa-lightbulb neonLight"></i></h1>
+    </header>
+    <div class="content">
+      <form>
+        <input type="text" class="todo-input" name="text" />
+        <button type="submit" class="todo-button">
+          <i class="fas fa-plus-circle"></i>
+        </button>
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="all">All Tasks</option>
+            <option value="complet">Complet</option>
+            <option value="incomplet">Incomplet</option>
+          </select>
+        </div>
+      </form>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
